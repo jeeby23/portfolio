@@ -42,8 +42,8 @@ const projects: Project[] = [
     description:
       'A professional auditing and assurance platform delivering accurate financial audits, risk assessment, and compliance solutions. DefendNet helps organizations maintain transparency, strengthen governance, and make confident, data-driven decisions.',
     tags: ['Vue.js', 'Tailwind CSS', 'Swipper', 'Framer Motion'],
-    image: '/defeee.jpeg',
-    liveUrl: 'https://defendnettechnology.com/',
+    image: '/defendpic.jpeg',
+    liveUrl: 'https://defendnettechnolog.netlify.app/',
     githubUrl: 'https://github.com/jeeby23/trydef',
   },
   {
