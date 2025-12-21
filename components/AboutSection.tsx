@@ -3,19 +3,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Code2, GraduationCap, Briefcase } from 'lucide-react'
 
-// const tools = [
-//   { name: 'HTML', src: 'html.svg' },
-//   { name: 'VS Code', src: 'vscode.svg' },
-//   { name: 'Figma', src: 'figma.svg' },
-//   { name: 'Git', src: 'git.svg' },
-//   { name: 'JS', src: 'js.webp' },
-//   { name: 'CSS', src: 'css.svg' },
-//   { name: 'React', src: 'react.webp' },
-//   { name: 'Nextjs', src: 'nextjs.svg' },
-//   { name: 'expo', src: 'expo.svg' },
-//   { name: 'TS', src: 'typescript.webp' },
-// ]
-
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -32,7 +19,7 @@ const itemVariants = {
 
 export default function AboutSection() {
   return (
-    <section id='About' className="py-20 px-6  overflow-hidden ">
+    <section id="About" className="py-20 px-6  overflow-hidden ">
       <motion.div
         max-width="1200px"
         initial="hidden"
@@ -61,7 +48,12 @@ export default function AboutSection() {
 
           <motion.div variants={itemVariants} className="w-full md:w-2/3">
             <p className="text-gray-600 text-lg leading-relaxed font-sans max-w-2xl">
-             I’m a Frontend Developer with hands-on experience building modern, user-focused web applications. I’m also an HNG Finalist, where I collaborated closely with cross-functional teams, consumed and integrated APIs, and worked extensively with Git, managing branches, pull requests, and code reviews. I’m passionate about writing clean, scalable code and delivering responsive, high-performance interfaces through effective teamwork and modern frontend best practices.
+              I’m a Frontend Developer with hands-on experience building modern, user-focused web
+              applications. I’m also an HNG Finalist, where I collaborated closely with
+              cross-functional teams, consumed and integrated APIs, and worked extensively with Git,
+              managing branches, pull requests, and code reviews. I’m passionate about writing
+              clean, scalable code and delivering responsive, high-performance interfaces through
+              effective teamwork and modern frontend best practices.
             </p>
 
             {/* Stats/Info Cards */}
@@ -85,20 +77,12 @@ export default function AboutSection() {
 
             {/* Tools Section */}
             <div className="mt-12">
-              {/* <div className="flex flex-wrap gap-4">
-                {tools.map((tool) => (
-                  <motion.div
-                    key={tool.name}
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    className="w-12 h-12 flex items-center justify-center rounded-xl border border-gray-100 shadow-sm p-2 bg-white"
-                  >
-                    <img src={tool.src} alt={tool.name} className="w-7 h-7 object-contain" />
-                  </motion.div>
-                ))}
-              </div> */}
-              <div className='mt-8 inline-block px-6 py-3 rounded-full bg-gray-500 hover:bg-gray-400 text-white font-semibold cursor-pointer shadow-lg shadow-blue-500/20 transition-colors' >
+              <a
+                href="#projects"
+                className="mt-8 inline-block px-6 py-3 rounded-full bg-gray-500 hover:bg-gray-400 text-white font-semibold shadow-lg transition-colors"
+              >
                 View my projects
-              </div>
+              </a>
             </div>
           </motion.div>
         </div>

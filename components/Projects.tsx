@@ -62,6 +62,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
   const isEven = index % 2 === 0
 
   return (
+    <section>
+
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -118,12 +120,13 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         </div>
       </div>
     </motion.div>
+    </section>
   )
 }
 
 export default function FeaturedProjects() {
   return (
-    <section className=" py-24 px-4 sm:px-6 lg:px-8">
+    <section className=" py-24 px-4 sm:px-6 lg:px-8" id='projects'>
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-20">

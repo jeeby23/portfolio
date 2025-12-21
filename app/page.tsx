@@ -21,7 +21,7 @@ export default function Page() {
           </Container>
           <Skills/>
           <Container>
-            <section id='projects'>
+            <section >
             <Projects/>
             </section>
             <section id='contact'> 

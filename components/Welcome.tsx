@@ -69,7 +69,7 @@ export default function Welcome() {
             </small>
 
             {/* 🔹 Full name: added justify-center */}
-            <h1 className="text-3xl md:text-5xl font-bold mt-2 flex flex-wrap justify-center leading-tight">
+            <h1 className="text-2xl md:text-5xl font-bold mt-2 flex flex-wrap justify-center leading-tight">
               {fullName.split('').map((char, index) => (
                 <motion.span
                   key={index}
@@ -88,8 +88,8 @@ export default function Welcome() {
             </h1>
 
             {/* 🔹 Tagline: added justify-center */}
-            <div className="text-gray-500 dark:text-gray-300 mt-4 w-full">
-              <p className="text-lg md:text-xl font-medium flex flex-wrap justify-center">
+            <div className="text-gray-500 dark:text-gray-400 mt-4 w-full">
+              <p className="text-[15px] md:text-xl font-medium flex flex-wrap justify-center">
                 {tagline.split('').map((char, index) => (
                   <motion.span
                     key={index}
