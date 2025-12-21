@@ -4,7 +4,6 @@ import ThemeToggle from "@/components/ThemeToggle";
 import MobileMenu from "@/components/MobileMenu";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
-// Sub-component for the Frontend Developer Logo
 const Logo = () => (
   <div className="flex items-center gap-2 group cursor-pointer pointer-events-auto">
     {/* The Monogram SVG */}
@@ -95,8 +94,6 @@ export default function Header() {
           </div>
         </div>
       </header>
-
-      {/* The Mobile Overlay */}
       <MobileMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </>
   );

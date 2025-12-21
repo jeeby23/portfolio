@@ -16,7 +16,6 @@ import {
   SiJavascript,
   SiCss3,
   SiReact,
-  SiFramer,
   SiSupabase,
   SiFirebase,
 } from 'react-icons/si'
@@ -26,8 +25,8 @@ const row1 = [
   { icon: <SiGit className="text-[#F05032]" />, name: 'Git' },
   { icon: <SiVuedotjs className="text-[#2496ED]" />, name: 'Vuejs' },
   { icon: <SiRedux className="text-[#764ABC]" />, name: 'Redux' },
-    { icon: <SiTailwindcss className="text-[#06B6D4]" />, name: 'Tailwind' },
-    { icon: <SiReact className="text-[#06B6D4]" />, name: 'React' },
+  { icon: <SiTailwindcss className="text-[#06B6D4]" />, name: 'Tailwind' },
+  { icon: <SiReact className="text-[#06B6D4]" />, name: 'React' },
 
   { icon: <SiNextdotjs className="text-black" />, name: 'Next.js' },
   { icon: <SiTailwindcss className="text-[#06B6D4]" />, name: 'Tailwind' },
@@ -43,13 +42,12 @@ const row2 = [
   { icon: <SiNextdotjs className="text-black" />, name: 'Next.js' },
   { icon: <SiCss3 className="text-black" />, name: 'CSS' },
   { icon: <SiFirebase className="text-black" />, name: 'Firebase' },
-  
 ]
 
 const SkillCard = ({ icon, name }: { icon: React.ReactNode; name: string }) => (
   <motion.div
     whileHover={{ scale: 1.1, y: -5 }}
-    className="flex items-center gap-3 px-6 py-4 mx-4 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200 min-w-[160px] cursor-default"
+    className="flex items-center gap-3 px-6 py-4 mx-4 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200 min-w-40 cursor-default"
   >
     <span className="text-3xl">{icon}</span>
     <span className="text-gray-800 font-semibold text-sm">{name}</span>
@@ -97,8 +95,8 @@ export default function SkillsSection() {
         <MarqueeRow items={row2} direction="left" />
       </div>
       <div className="relative">
-        <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[#0a0a0c] to-transparent z-10 pointer-events-none" />
-        <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-[#0a0a0c] to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-32 h-full bg-linear-to-r from-[#0a0a0c] to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-32 h-full bg-linear-to-l from-[#0a0a0c] to-transparent z-10 pointer-events-none" />
       </div>
     </section>
   )
