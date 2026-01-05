@@ -56,6 +56,16 @@ const projects: Project[] = [
     liveUrl: 'https://tourwidget.vercel.app/',
     githubUrl: 'https://github.com/seyiadisa/hng-onboarding-app',
   },
+  {
+  title: 'LegalWatchDog',
+  subtitle: 'Automated Legal Monitoring, Simplified',
+  description:
+    'An AI-powered legal monitoring platform that tracks changes across critical websites—such as visa portals, regulatory bodies, and employment law pages—and delivers clear, actionable summaries in real time. LegalWatchDog helps individuals and organizations stay compliant and informed without manually checking multiple sources.This was a team project built during the HNGi13 internship program.',
+  tags: ['Vue.js', 'Tailwind CSS', 'AI Monitoring', 'Web Scraping'],
+  image: '/legalwatchdog.jpeg',
+  liveUrl: 'https://legalwatchdog.vercel.app/',
+  githubUrl: 'https://github.com/jeeby23/legal-watch-dog-FE',
+}
 ]
 
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
